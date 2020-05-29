@@ -15,7 +15,7 @@ namespace GMF.Transform
 {
     public static class GMFTransformTimerFunc
     {
-        static CloudStorageAccount storageAccount = CloudStorageAccount.Parse("DefaultEndpointsProtocol=https;AccountName=sa3007;AccountKey=uJfO1OaAHJlPfmf4scXRDy/qNskkwpx6LVnOh1A595JZbMuZK8Sb2e+HsfDflHMVddRk8nXgd0vitQ/zRMZsfA==;EndpointSuffix=core.windows.net");
+        static CloudStorageAccount storageAccount = CloudStorageAccount.Parse("");
         static CloudBlobClient client = storageAccount.CreateCloudBlobClient();
         static string liquidtransformerUrl = Environment.GetEnvironmentVariable("LiquidTransformerURL");
         [FunctionName("GMFTransformTimerFunc")]
